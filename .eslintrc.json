@@ -1,0 +1,16 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "es6": true,
+    "mocha": true,
+    "node": true
+  },
+  "overrides": [
+    {
+      "files": ["*.test.js","*.spec.js"],
+      "rules": {
+        "func-names": "off"
+      }
+    }
+  ]
+}

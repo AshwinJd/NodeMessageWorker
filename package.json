@@ -1,0 +1,30 @@
+{
+  "name": "samplemessageworker",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "register": "node ./bin/registerworkers",
+    "test": "./node_modules/.bin/mocha ./test/**/*spec.js ./test/**/*test.js ./appmodules/**/*spec.js ./appmodules/**/*test.js",
+    "lint": "./node_modules/.bin/eslint --ignore-path .eslintignore ./appmodules/**/*.js ./*.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "async": "^2.6.1",
+    "lodash": "^4.17.11",
+    "log4js": "^4.0.2",
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "mocha": "^5.2.0",
+    "should": "^13.2.3",
+  },
+  "keywords": [],
+  "author": "Ashwin",
+  "license": "ISC"
+}
